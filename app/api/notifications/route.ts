@@ -7,7 +7,7 @@ import { ISubscriber, useSubscriptionModel } from '@/models/subscription';
 
 import { IProfiles } from '@/interfaces';
 
-const DB_NAME = process.env.MONGO_DB_NAME as string;
+const DB_NAME = process.env.SECONDARY_MONGO_DB_NAME as string;
 
 function filterNonEmptyNotifications(profiles: IProfiles): Partial<IProfiles> {
     const filtered: Partial<IProfiles> = {};
